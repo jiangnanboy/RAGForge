@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ragforge-sdk"
+version = "1.0.0"
+description = "Modular, composable RAG retrieval library —— Build your retrieval pipeline like forging parts."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name="jiangnanboy", email="2229029156@qq.com" }]
+requires-python = ">=3.11"
+dependencies = [
+    "jieba>=0.42.1",
+    "numpy>=1.24.0",
+    "scikit-learn>=1.2.0",
+    "fastembed>=0.7.4",
+    "rank-bm25>=0.2.2",
+    "openai>=1.109.1",
+    "requests>=2.32.5"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+GitHub = "https://github.com/jiangnanboy/RAGForge"
