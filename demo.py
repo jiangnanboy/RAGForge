@@ -457,7 +457,7 @@ documents = [
 if __name__ == "__main__":
     print("Run individual examples:")
     # print("  example_pipeline_with_tracing()")
-    # example_pipeline_with_tracing()
+    example_pipeline_with_tracing()
 
     # print("  example_pipeline_with_profiling()")
     # example_pipeline_with_profiling()

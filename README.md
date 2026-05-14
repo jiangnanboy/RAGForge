@@ -530,7 +530,7 @@ ragforge/
 |------|------|--------|------|
 | `api_key` | `str` | `""` | DeepSeek API Key |
 | `base_url` | `str` | `"https://api.deepseek.com"` | API 地址 |
-| `model` | `str` | `"deepseek-chat"` | 模型名称 |
+| `model` | `str` | `"deepseek-v4-flash"` | 模型名称 |
 
 ---
 

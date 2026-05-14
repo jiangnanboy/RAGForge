@@ -520,7 +520,7 @@ ragforge/
 |-----------|------|---------|-------------|
 | `api_key` | `str` | `""` | DeepSeek API Key |
 | `base_url` | `str` | `"https://api.deepseek.com"` | API endpoint |
-| `model` | `str` | `"deepseek-chat"` | Model name |
+| `model` | `str` | `"deepseek-v4-flash"` | Model name |
 
 ---
 
