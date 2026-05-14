@@ -62,7 +62,6 @@ LangChain and LlamaIndex can do all of this — but they're **full-stack framewo
 | **LLM Evaluation** | Generic | Generic | ✅ Purpose-built for retrieval |
 | **Pluggable Components** | Limited | Limited | ✅ Protocol interfaces |
 | **Vector DB Coupling** | ❌ Coupled | ❌ Coupled | ✅ Agnostic |
-| **Zero External Deps** | ❌ | ❌ | ✅ BM25 works standalone |
 
 > **In a nutshell**: Need just BM25? 3 lines of code. Need Hybrid + Rerank + Multi-Query + X-Ray + A/B evaluation? Every feature at your fingertips. **And it all runs on CPU — no GPU required.**
 
@@ -72,7 +71,7 @@ LangChain and LlamaIndex can do all of this — but they're **full-stack framewo
 
 Install：pip install ragforge-sdk
 
-### Minimal: Pure keyword search (zero dependencies)
+### Minimal: Pure keyword search
 
 ```python
 from ragforge import SearchPipeline, BM25Retriever
@@ -209,7 +208,7 @@ FINAL RESULTS:
 | **Query Expansion** | Synonym / related-term expansion | DeepSeek API / Local small model (planned) |
 | **Multi-Query Retrieval** | Original + rewritten queries retrieve separately → RRF fusion | CPU + API |
 
-> **Design philosophy**: The retrieval pipeline's core computation (Embedding, BM25, Rerank, Fusion) runs entirely on local CPU with **zero external API dependencies**. Query understanding (Rewrite, HyDE, etc.) currently uses the DeepSeek API, with support for local small models (e.g., Qwen2.5-1.5B, DeepSeek-R1-Distill) planned for fully offline deployment.
+> **Design philosophy**: The retrieval pipeline's core computation (Embedding, BM25, Rerank, Fusion) runs entirely on local CPU. Query understanding (Rewrite, HyDE, etc.) currently uses the DeepSeek API, with support for local small models (e.g., Qwen2.5-1.5B, DeepSeek-R1-Distill) planned for fully offline deployment.
 
 ### 🔭 Observability
 

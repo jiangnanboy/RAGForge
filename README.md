@@ -15,7 +15,7 @@ README：[中文](README.md) | [English](README_EN.md)
 </div>
 
 <p align="center">
-  <strong>纯 CPU，零依赖，一个库搞定 RAG 检索管道。</strong>
+  <strong>纯 CPU，一个库搞定 RAG 检索管道。</strong>
 </p>
 
 <p align="center">
@@ -62,7 +62,6 @@ LangChain 和 LlamaIndex 都能做，但它们是**全栈框架**——你引入
 | **LLM 评估** | 通用 | 通用 | ✅ 专为检索设计 |
 | **组件可替换** | 受限 | 受限 | ✅ Protocol 接口 |
 | **向量库绑定** | ❌ | ❌ | ✅ 不关心 |
-| **零外部依赖** | ❌ | ❌ | ✅ BM25 零依赖即可用 |
 
 > **一句话**：如果你只需要 BM25，用 3 行代码；如果你需要 Hybrid + Rerank + Multi-Query + X-Ray + A/B 评估，也能一行不漏。全看你组装什么。**而且全程 CPU，不需要一块 GPU。**
 
@@ -72,7 +71,7 @@ LangChain 和 LlamaIndex 都能做，但它们是**全栈框架**——你引入
 
 安装：pip install ragforge-sdk
 
-### 最简：纯关键词搜索（零依赖）
+### 最简：纯关键词搜索
 
 ```python
 from ragforge import SearchPipeline, BM25Retriever
@@ -219,7 +218,7 @@ Total: 3751.8ms
 | **Query Expansion** | 同义词 / 相关词扩展 | DeepSeek API / 未来本地小模型 |
 | **Multi-Query Retrieval** | 原始 + 改写查询分别检索 → RRF 融合 | CPU + API |
 
-> **设计哲学**：检索管道的核心计算（Embedding、BM25、Rerank、Fusion）全部本地 CPU 完成，**不依赖任何外部 API**。查询理解（Query Rewrite 等）目前通过 DeepSeek API 实现，后续将支持接入本地小模型（如 Qwen2.5-1.5B、DeepSeek-R1-Distill），实现完全离线部署。
+> **设计哲学**：检索管道的核心计算（Embedding、BM25、Rerank、Fusion）全部本地 CPU 完成。查询理解（Query Rewrite 等）目前通过 DeepSeek API 实现，后续将支持接入本地小模型（如 Qwen2.5-1.5B、DeepSeek-R1-Distill），实现完全离线部署。
 
 ### 🔭 可观测性
 
