@@ -587,6 +587,9 @@ Auto-downloaded to `~/.cache/RAGForge/` on first use with lazy loading.
 
 ---
 
+## Contact
+Email：2229029156@qq.com
+
 ## License
 
 Apache2.0 License — see the [LICENSE](LICENSE) file for details.

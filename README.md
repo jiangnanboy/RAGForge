@@ -597,6 +597,9 @@ pip install openai  # DeepSeek 兼容 OpenAI API
 
 ---
 
+## Contact
+Email：2229029156@qq.com
+
 ## License
 
 Apache2.0 License - see the [LICENSE](LICENSE) file for details.
